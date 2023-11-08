@@ -1,0 +1,346 @@
+body {
+  margin: auto 0px;
+  user-select: none;
+}
+.head {
+  margin: 0px;
+  text-align: center;
+}
+.head img {
+  width: 100%;
+  height: auto;
+  min-width: 360px;
+}
+
+/* Navbar */
+
+.nav {
+  position: sticky;
+  top: 0;
+  margin: 0px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  background: linear-gradient(to top left, #ff0000 0%, #cc00ff 100%);
+  z-index: 1;
+}
+.nav a {
+  color: rgb(252, 236, 9);
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 19px;
+}
+.drpdwn_icn {
+  box-sizing: border-box;
+  padding: 3px 0px 0px 4px;
+}
+.nav_l {
+  margin-left: 20px;
+  width: 50%;
+  height: inherit;
+  text-align: center;
+  display: inline-block;
+  text-align: center;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  word-spacing: 2px;
+  margin: 1px 20px;
+}
+.nav ul li {
+  padding-top: 7px;
+  height: inherit;
+  padding: 6px 20px 5px 20px;
+}
+.nav ul li ul {
+  display: none;
+  position: absolute;
+  margin: 1px 0px 1px 0px;
+  margin-top: 8px;
+  padding-left: 2px;
+  text-align: left;
+  background: linear-gradient(to top left, #ff0000 0%, #cc00ff 100%);
+  line-height: 29px;
+  opacity: 0.8;
+}
+.parent_li:hover {
+  border: 2px solid #ff00dd;
+  border-radius: 20px;
+  background-color: #ff00c89a;
+}
+.parent_li li:hover {
+  border: 4px solid #ff000000;
+  border-radius: 25px;
+  background-color: #ff00009f;
+}
+.nav ul li:hover > ul {
+  display: block;
+}
+.fa-search,
+.fa-id-card,
+.fa-angle-double-right,
+.fa-user {
+  padding: 0px 5px;
+}
+.fa-search {
+  padding-right: 15px;
+}
+.nav_r {
+  max-width: 752px;
+  margin-right: 20px;
+  padding-right: 100px;
+  height: inherit;
+  text-align: right;
+  float: right;
+}
+
+/* Main Container */
+
+.img_1 {
+  background-image: url("holding_hand.jpg");
+}
+.img_2 {
+  background-image: url("img 2.jpeg");
+}
+.img_3 {
+  background-image: url("image.jpg");
+}
+.main .img_1,
+.img_2,
+.img_3 {
+  margin-top: 0px;
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.pragrph {
+  display: inline-block;
+  width: 100%;
+  padding: 40px 120px;
+  box-sizing: border-box;
+  font-size: 35px;
+  color: rgb(246, 230, 8);
+  font-style: italic;
+  font-weight: bolder;
+  background: linear-gradient(to top right, #33ccff 30%, #cc0099 70%);
+  text-align: center;
+}
+.pragrph q {
+  display: inline-block;
+  text-align: center;
+}
+.pragrph p {
+  font-size: 25px;
+}
+
+/* For Registration */
+
+.register_form {
+  height: 580px;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  background: linear-gradient(to top right, #00ff00 30%, #ffff00 70%);
+  box-sizing: border-box;
+}
+.heading {
+  height: 110px;
+  width: 50%;
+  margin-top: 15px;
+  margin-left: 25%;
+  padding-top: 25px;
+  border-radius: 100px;
+  line-height: 10px;
+  background: linear-gradient(to bottom, #ff66ff 0%, #ffff00 100%);
+}
+.heading p {
+  font-size: 20px;
+}
+
+.container {
+  height: 270px;
+  background: linear-gradient(to top, #ffffff 0%, #66ccff 100%);
+  padding: 60px 15px 15px 15px;
+  margin-top: 15px;
+  margin-left: 10%;
+  width: 80%;
+  justify-content: space-evenly;
+  box-shadow: 20px 20px 10px grey;
+}
+.input_box {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  margin: 0px 110px;
+}
+.scnd_row {
+  margin: 0px 150px;
+}
+.input_box select,
+.input_box input[type="date"] {
+  border: none;
+  border-bottom: 1px solid #92929cbe;
+  width: 250px;
+  background: transparent;
+  outline: none;
+  color: #92929cbe;
+  font-size: 18px;
+}
+.input_box select option {
+  color: black;
+}
+.input_box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.input_box select:focus ~ label,
+.input_box select:valid ~ label,
+.input_box input[type="date"]:focus ~ label,
+.input_box input[type="date"]:valid ~ label {
+  top: -28px;
+  left: 12px;
+  font-size: 16px;
+}
+.input_box select:focus,
+.input_box input[type="date"]:focus {
+  border-bottom: 1px solid blue;
+  color: black;
+  transition: 0.8s linear;
+}
+.input_box label[class="gen"] {
+  position: absolute;
+  top: -28px;
+  left: 70px;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.input_box #gen_f {
+  left: 150px;
+}
+.scnd_r_colm {
+  left: -55px;
+}
+.rgstr_btn button {
+  margin-top: 40px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+  padding: 10px 30px;
+  background: linear-gradient(to top right, #ff33cc 0%, #0000ff 100%);
+  border: 4px outset #333232;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 2.5px grey;
+}
+.steps {
+  margin-top: 0px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 425px;
+  background: linear-gradient(to top left, #00ccff 0%, #ffff00 100%);
+}
+.stp_heading {
+  margin-top: 40px;
+  margin-left: 75px;
+  line-height: 15px;
+}
+.stp {
+  margin: -30px 73px 5px 73px;
+  padding: 15px;
+  width: 261px;
+  height: fit-content;
+  float: left;
+  text-align: center;
+}
+.steps .stp_img {
+  margin: auto 63px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 148px;
+  width: 133px;
+  background-image: url("home-icon-sprite.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.steps #stp1:hover{
+  background-position: 0px -148px;
+}
+.steps #stp2 {
+  background-position: 0px -296px;
+}
+.steps #stp2:hover{
+  background-position: 0px -444px;
+}
+.steps #stp3 {
+  background-position: 0px -592px;
+}
+.steps #stp3:hover{
+  background-position: 0px -740px;
+}
+.stp_name {
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(63, 14, 238);
+  /* font-weight: 525; */
+}
+.stp_dscrptn {
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Footer */
+.footer {
+  padding: 25px;
+  height: 100px;
+  text-align: center;
+  background-color: rgb(10, 10, 10);
+}
+.footer .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.footer .fa:hover {
+  opacity: 0.7;
+}
+
+.footer .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+.footer .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.footer .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.footer .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.footer .fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.footer .fa-twitter {
+  background: #55acee;
+  color: white;
+}
